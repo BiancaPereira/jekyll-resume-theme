@@ -1,0 +1,9 @@
+- name: Linkedin
+  icon: linkedin
+  link: https://linkedin.com/in/biancacpereira
+- name: Github
+  icon: github
+  link: https://github.com/biancapereira
+- name: My articles on dev.to
+  icon: dev
+  link: https://dev.to/biancapereira
