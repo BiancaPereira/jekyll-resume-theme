@@ -1,0 +1,10 @@
+<div class="education">
+  {% for education in site.data.education %}
+    <div class="education__institution">
+      {{ education.institution }}
+    </div>
+    <div class="education__title">
+      {{ education.name }} <span class="education__title__year">({{ education.grad_year }})</span>
+    </div>
+  {% endfor %}
+</div>

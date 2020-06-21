@@ -1,0 +1,9 @@
+<nav class="social">
+  {% for item in site.data.social %}
+    <a href="{{ item.link }}" title="{{ item.name }}">
+      <span
+        class="social__icon social__icon__{{ item.icon }}" aria-label="{{ item.name }}">
+      </span>
+    </a>
+  {% endfor %}
+</nav>

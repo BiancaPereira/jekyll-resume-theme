@@ -1,0 +1,22 @@
+{% assign ordered_experience = site.experience | sort: "order" %}
+<div class="experience">
+  {% for experience in ordered_experience %}
+    <div class="experience__company">
+      {{ experience.company }}
+    </div>
+    <div class="experience__role">
+      {{ experience.role }}
+    </div>
+    <div class="experience__period">
+      ({{ experience.start_date }} - {{ experience.end_date }})
+    </div>
+    <div class="experience__content">
+      <p>{{ experience.content | markdownify }}</p>
+    </div>
+    <div class="experience__tecnologies">
+      {% for tecnology in experience.tecnologies %}
+        <span>{{ tecnology }}</span>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
