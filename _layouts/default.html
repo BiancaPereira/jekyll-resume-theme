@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ page.objective }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+    <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__photo">
+        <img
+          src="{{ "/assets/images/profile.png" | relative_url }}"
+          alt="{{ page.title }}'s photo'">
+      </div>
+      {{ content }}
+      {% include social.html %}
+    </header>
+
+    <main class="main-container">
+      <article class="information">
+        <section class="information__experience">
+          <h2>Experience</h2>
+          {% include experience.html %}
+        </section>
+        <section class="information__education">
+          <h2>Education</h2>
+          {% include education.html %}
+        </section>
+      </article>
+      <aside class="about">
+        <div class="about__contact">
+          {% include contact.html %}
+        </div>
+        <div class="about__profile">
+          {% include profile.html %}
+        </div>
+      </aside>
+    </main>
+
+    <footer class="main-footer">
+      <p class="main-footer__credits">
+        Feito com <span aria-label="amor">❤</span> por <a href="mailto:pereirabi@outlook.com">Bianca Pereira</a>.
+      </p>
+    </footer>
+  </body>
+</html>
