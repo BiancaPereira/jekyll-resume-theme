@@ -6,8 +6,8 @@ In [Jekyll Docs](https://jekyllrb.com/docs/step-by-step/01-setup/) you have a st
 
 ## Using the resume theme
 
-1. Clone my repo in your workspace.
-`git clone https://github.com/BiancaPereira/resume.git`
+1. Fork and clone the repo in your workspace.
+`git clone https://github.com/your_user/resume.git`
 
 2. Install Ruby ([here is a tutorial](https://jekyllrb.com/docs/installation/)).
 3. Run Jekyll.
