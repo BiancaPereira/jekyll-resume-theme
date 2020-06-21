@@ -1,0 +1,315 @@
+---
+---
+
+/**
+ * Bianca Pereira | pereirabi@outlook.com | 2020
+ * Contact icons: https://www.iconfinder.com/iconsets/heroicons-ui
+ * Social icons: https://www.iconfinder.com/iconsets/logos-and-brands-3
+ */
+
+/* VARIABLES
+   ========================================================================== */
+
+/**
+ * Colors
+ */
+$color-font: #333;
+$color-white: #fff;
+$color-light-gray: #f9f9f9;
+$color-medium-gray: #d7d9d9;
+$color-dark-gray: #777;
+$color-gray: #999;
+$color-background-pink: #fff7f9;
+$color-light-pink: #ffebf1;
+$color-medium-pink: #ffd2e0;
+$color-pink: #fb4881;
+
+/**
+ * Breakpoints
+ */
+$breakpoint-md: 767px;
+
+/**
+ * Mixins
+ */
+@mixin small-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9em;
+  color: $color-dark-gray;
+}
+
+/* BASE
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 30px 10px;
+  background: $color-background-pink;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: $color-font;
+}
+
+/**
+ * Headings and text
+ */
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 10px;
+  color: $color-pink;
+}
+
+a {
+  color: $color-pink;
+}
+
+/* LAYOUT
+   ========================================================================== */
+
+/**
+ * Main
+ */
+
+.main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 870px;
+  margin: auto;
+  padding: 0 15px;
+  background: $color-white;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid $color-medium-gray;
+  border-top: 0;
+
+  section {
+    margin: 0 -15px;
+    padding: 15px;
+    border-top: 1px solid $color-medium-gray;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    flex-direction: row;
+    padding: 0 30px;
+
+    section {
+      margin: 0 -30px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+/**
+ * Article
+ */
+
+ .information {
+  @media screen and (min-width: $breakpoint-md) {
+    width: 70%;
+  }
+}
+
+/**
+ * Header
+ */
+
+.main-header {
+  max-width: 870px;
+  margin: 0 auto -1px auto;
+  padding: 25px 30px 25px;
+  background: $color-pink;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid $color-pink;
+  text-align: center;
+  color: $color-white;
+
+  &__objective {
+    font-style: italic;
+    font-size: 1.1em;
+  }
+
+  &__photo img {
+    width: 50px;
+    border-radius: 50%;
+  }
+}
+
+/**
+ * Aside
+ */
+
+.about {
+  margin: -15px -16px 0;
+  padding: 15px;
+  background: $color-light-pink;
+  border: 1px solid $color-medium-pink;
+  border-top: 0;
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 30%;
+    margin: 0 -31px -0 20px;
+    padding: 30px;
+    border-radius: 0 0 5px 0;
+  }
+}
+
+/**
+ * Footer
+ */
+
+.main-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: .9em;
+
+  &__credits span {
+    color: $color-pink;
+  }
+}
+
+/* MODULE
+   ========================================================================== */
+
+/**
+ * Includes: Contact
+ */
+
+.contact {
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-size: contain;
+
+    &__location {
+      background-image: url({{ "/assets/images/location.svg" | relative_url }});
+    }
+    &__mail {
+      background-image: url({{ "/assets/images/mail.svg" | relative_url }});
+    }
+  }
+
+  &__location,
+  &__email {
+    display: flex;
+  }
+}
+
+/**
+ * Includes: Education
+ */
+
+.education {
+  &__title {
+    margin-bottom: 20px;
+
+    span {
+      color: $color-gray;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__institution {
+    @include small-title;
+  }
+}
+
+/**
+ * Includes: Experience
+ */
+
+.experience {
+  &__company {
+    @include small-title;
+    margin-top: 30px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__period {
+    margin-top: 3px;
+    font-size: .8em;
+    color: $color-gray;
+  }
+
+  &__role {
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
+  &__content {
+    ul {
+      margin-top: -10px;
+    }
+    li {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__tecnologies {
+    span {
+      display: inline-block;
+      margin-bottom: 3px;
+      padding: 5px;
+      background: $color-pink;
+      border-radius: 5px;
+      font-size: .8em;
+      color: $color-white;
+    }
+  }
+}
+
+/**
+ * Includes: Social
+ */
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background-size: contain;
+    filter: invert(1);
+
+    &:hover {
+      opacity: .7;
+      transition: opacity .5s;
+    }
+
+    &__linkedin {
+      background-image: url({{ "/assets/images/linkedin.svg" | relative_url }});
+    }
+    &__github {
+      background-image: url({{ "/assets/images/github.svg" | relative_url }});
+    }
+    &__dev {
+      background-image: url({{ "/assets/images/dev.svg" | relative_url }});
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
