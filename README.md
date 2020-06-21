@@ -9,11 +9,14 @@ In [Jekyll Docs](https://jekyllrb.com/docs/step-by-step/01-setup/) you have a st
 1. Fork and clone the repo in your workspace.
 `git clone https://github.com/your_user/resume.git`
 
-2. Install Ruby ([here is a tutorial](https://jekyllrb.com/docs/installation/)).
-3. Run Jekyll.
+2. Install Ruby and after it install Jekyll ([here is a tutorial](https://jekyllrb.com/docs/installation/)).
+
+3. You have to run `jekyll build` to build the `_site` folder.
+
+4. Run Jekyll.
 `jekyll serve`
 
-4. Access it in your `localhost:4000`.
+5. Access it in your `localhost:4000`.
 
 ## Folder structure
 
