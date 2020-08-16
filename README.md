@@ -1,5 +1,7 @@
 # Online resume with Jekyll
 
+> Visit my blog post about this repo ["Como criar um currículo no Github Pages com Jekyll"](https://dev.to/compiladoras/como-criar-um-curriculo-no-github-pages-com-jekyll-20gm) (pt-br)
+
 I made this resume with Jekyll, using Sass in the CSS. I choose Jekyll because I can deploy it in Github Pages easily and totally free.
 
 In [Jekyll Docs](https://jekyllrb.com/docs/step-by-step/01-setup/) you have a step by step tutorial. I used in Windows with WSL with no problems. It is really easy to follow, but in my [DEVs page](https://dev.to/biancapereira) I pretend to post a simple to follow tutorial about the process.
