@@ -1,5 +1,7 @@
 # Online resume with Jekyll
 
+![Preview](https://user-images.githubusercontent.com/16962057/149665164-b1bdb1ad-cb2d-4e49-9317-d61770b1dddc.png)
+
 > Visit my blog post about this repo ["Como criar um currículo no Github Pages com Jekyll"](https://dev.to/compiladoras/como-criar-um-curriculo-no-github-pages-com-jekyll-20gm) (pt-br)
 
 I made this resume with Jekyll, using Sass in the CSS. I choose Jekyll because I can deploy it in Github Pages easily and totally free.
